@@ -7,8 +7,11 @@
 from numpy import random
 
 
-def create_2d_array():
-    ar_size = int(input("Size of data set: "))
+def create_2d_array(size=0):
+    if size == 0:
+        ar_size = int(input("Size of data set: "))
+    else:
+        ar_size = size
     return random.random((ar_size, ar_size))
 
 
