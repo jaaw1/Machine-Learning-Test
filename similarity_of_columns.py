@@ -18,5 +18,6 @@ if __name__ == '__main__':
 
     per_table = similarity_of_columns(table_a, table_b)
 
+    print("Similarity in percentages: ")
     for x in range(len(per_table)):
         print(per_table[x])
